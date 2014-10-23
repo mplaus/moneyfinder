@@ -1,3 +1,9 @@
+$(document).ready(function() {
+  
+  var parseAPPID = "W91Wk1zFsAuDszjC07tMNEaatOf4cM1DS5m2k03P";
+  var parseJSID = "rReOROOQgAkOePRoPa8TJ9UavsqAi2za36LOGIfh";
+  
+  Parse.initialize(parseAPPID, parseJSID);
 // onSuccess Callback
 // This method accepts a Position object, which contains the
 // current GPS coordinates
@@ -12,8 +18,6 @@ var onSuccess = function(position) {
           'Speed: '             + position.coords.speed             + '\n' +
           'Timestamp: '         + position.timestamp                + '\n'
           ];
-          console.log(geoData);
-
 };
 
 // onError Callback receives a PositionError object
@@ -24,3 +28,5 @@ function onError(error) {
 }
 
 navigator.geolocation.getCurrentPosition(onSuccess, onError);
+
+var point = new Parse.GeoPoint({geoData});
