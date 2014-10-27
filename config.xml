@@ -77,5 +77,5 @@ Steven King
 <icon src="imgs/icons/AppIcon72x72.png" />
 <gap:splash src="splash.png" />
 <gap:plugin name="com.phonegap.plugins.barcodescanner" />
-<access origin="http://www.parsecdn.com/js/parse-1.2.12.min.js" />
+<access origin="https://www.parse.com/apps/wheres-george/collections#class/findGeorge" />
 </widget>
