@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns = "http://www.w3.org/ns/widgets"
-xmlns:gap = "http://phonegap.com/ns/1.0"
-id = "com.steventking.com"
-versionCode="1"
-version = "1">
-<name>King Photo Excursions</name>
+<widget id="io.cordova.hellocordova" version="0.0.1" xmlns= "http://www.w3.org/ns/widgets" xmlns:gap= "http://phonegap.com/ns/1.0" xmlns:cdv="http://cordova.apache.org/ns/1.0" versionCode="1" version = "1">
+<name>Where's George</name>
 <description>
 Demo app for class to use multiple plugins </description>
-<author href="steventking.com" email="steven.king@unc.edu">
-Steven King
-</author>
+
 <access origin="*" subdomains="true" />
 <preference name="phonegap-version" value="3.5.0" />
 <preference name="orientation" value="default" />
@@ -77,5 +71,5 @@ Steven King
 <icon src="imgs/icons/AppIcon72x72.png" />
 <gap:splash src="splash.png" />
 <gap:plugin name="com.phonegap.plugins.barcodescanner" />
-<access origin="https://www.parse.com/apps/wheres-george/collections#class/findGeorge" />
+
 </widget>
