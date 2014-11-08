@@ -4,14 +4,14 @@
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>App 2</title>
+    <link rel="stylesheet" href="css/foundation_icons_general_enclosed/stylesheets/general_enclosed_foundicons.css" />
     <link rel="stylesheet" type="text/css" href="css/foundation.css"/>
     <link rel="stylesheet" href="css/mycss.css"/>
-    <link rel="stylesheet" href="css/foundation_icons_general_enclosed/stylesheets/general_enclosed_foundicons.css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/vendor/modernizr.js"></script>
-    <script type="text/javascript" src"js/foundation.min.js"></script>
     <script src="phonegap.js"></script>
     <script src="js/camera.js"></script>
+    <!--<script type="text/javascript" src="js/location.js"></script>-->
     <script src="http://www.parsecdn.com/js/parse-1.2.12.min.js"></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
             <script type="text/javascript" src="js/app.js"></script>
@@ -20,26 +20,23 @@
 <body>
     <nav class="top-bar" data-topbar role="navigation"> 
         <ul class="title-area"> 
-            <li class="name"> 
-                <h1>
-                    <a href="index.html">Back</a>
-                </h1> 
+            <li class="name">     
             </li> 
         </ul> 
     </nav>
     <center>
-        <h1>Search for your dollar</h1>
-    </center>
-    <form id="searchGeorge">
+       <form id="searchGeorge">
         <div class="row">
             <div class="large-12 columns">
                     <input id="serialNumber" class= "searchNumber" type="text" placeholder="Serial Number"/>
             </div>
         </div>
         <center>
-            <input onClick= "location.href='View.html'" type="submit" value="Submit" class="button" style="background-color:#D0EAD7; margin-top:200px; color:black"/>
+            <input class="button" style="background-color:#D0EAD7; margin-top:200px; color:black" onClick= "location.href='View.html'" value="Submit"/>
         </center>
         </form>
+
+
 
 
 

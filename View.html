@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>App 2</title>
     <link rel="stylesheet" type="text/css" href="css/foundation.css"/>
-    <link rel="stylesheet" href="css/mycss.css"/>
-    <link rel="stylesheet" href="css/foundation_icons_general_enclosed/stylesheets/general_enclosed_foundicons.css" />
+    <link rel="stylesheet" href="css/foundation_icons_general/stylesheets/general_foundicons.css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/mycss.css"/>
     <script type="text/javascript" src="js/vendor/modernizr.js"></script>
     <script type="text/javascript" src"js/foundation.min.js"></script>
     <script src="phonegap.js"></script>
@@ -21,13 +21,23 @@
     <nav class="top-bar" data-topbar role="navigation"> 
         <ul class="title-area"> 
             <li class="name"> 
-                <h1>
-                    <a href="index.html">Back</a>
-                </h1> 
             </li> 
         </ul> 
+        <section class="top-bar-section"> 
+            <!-- Right Nav Section --> 
+            <ul class="right"> 
+                <li> 
+                    <a href="Register.html"><i class="foundicon-plus" id="plus"></i></a> 
+                </li> 
+            </ul> 
+            <!-- Left Nav Section --> 
+            <ul class="left"> 
+                <li>
+                    <a href="index.html">Back</a>
+                </li> 
+            </ul> 
+        </section> 
     </nav>
-
     <center>
         <h1>Track Your Dollar</h1>
     </center>
