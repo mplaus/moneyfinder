@@ -25,3 +25,9 @@ button .Registry{
 #plus{
 	color:#FFFFFF;
 }
+
+.nav{
+width: auto;
+height: auto !important;
+display: inline;
+}

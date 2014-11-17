@@ -10,10 +10,11 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/vendor/modernizr.js"></script>
     <script src="phonegap.js"></script>
-    <script src="js/camera.js"></script>
-    <!--<script type="text/javascript" src="js/location.js"></script>-->
+    
+    <script type="text/javascript" src="js/location.js"></script>
     <script src="http://www.parsecdn.com/js/parse-1.2.12.min.js"></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="js/camera.js"></script>
             <script type="text/javascript" src="js/app.js"></script>
 
     
@@ -23,7 +24,7 @@
         <ul class="title-area"> 
             <li class="name"> 
                 <h1>
-                    <a href="index.html">Back</a>
+                    <a href="View.html">Back</a>
                 </h1> 
             </li> 
         </ul> 
@@ -31,7 +32,7 @@
     <center>
     <h1>Register A Dollar</h1>
 
-    <form id="addGeorge">
+    <form id="addGeorgeform">
         <div class="row">
             <div class="large-12 columns">
                     <input id="serialNumber" type="text" placeholder="Serial Number" style="margin-top:25px"/>
@@ -45,7 +46,7 @@
                 <img id="cameraPic:" src="" style="width:auto;height:120px;"></img>
             </div>
         </div>
-       <input class= "button" style="background-color:#D0EAD7; color:black" onClick= "location.href='View.html'" value="Submit"/>
+       <button class="button" id="addGeorge" style="background-color:#D0EAD7; color:black" onclick="location.href='View.html'">Submit</button>
     </form>
         
     
@@ -54,7 +55,7 @@
         </center>
     
 
-    <script type="text/javascript" src="js/vendor/jquery.js"></script>
+
     <script type="text/javascript" src="js/foundation.min.js"></script>
     <script type="text/javascript">$(document).foundation();</script>
 </body>
