@@ -6,6 +6,7 @@ function onDeviceReady() {
     console.log("onDeviceReady()");
     navigator.geolocation.getCurrentPosition(generateMap, onError);
     console.log(position);
+}
 
 var htmlBuilder = "";
 
