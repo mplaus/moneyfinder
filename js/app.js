@@ -1,7 +1,10 @@
 /* global $,document,console,Parse */
 
-var htmlBuilder;
+var htmlBuilder = "";
 
+document.addEventListener("deviceready", onDeviceReady, false);
+
+$(document).ready(function() {
     
     var parseAPPID = "W91Wk1zFsAuDszjC07tMNEaatOf4cM1DS5m2k03P";
     var parseJSID = "rReOROOQgAkOePRoPa8TJ9UavsqAi2za36LOGIfh";
@@ -10,10 +13,6 @@ var htmlBuilder;
     var findGeorge = Parse.Object.extend("findGeorge");
 
     var htmlBuilder=[];
-
-    document.addEventListener("deviceready", onDeviceReady, false);
-
-$(document).ready(function() {
 
     getGeorge(findGeorge);
     
