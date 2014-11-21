@@ -1,8 +1,14 @@
 /* global $,document,console,Parse */
 
+document.addEventListener("deviceready", onDeviceReady, false);
+// PhoneGap is ready
+function onDeviceReady() {
+    console.log("onDeviceReady()");
+    navigator.geolocation.getCurrentPosition(generateMap, onError);
+    console.log(position);
+
 var htmlBuilder = "";
 
-document.addEventListener("deviceready", onDeviceReady, false);
 
 $(document).ready(function() {
     
