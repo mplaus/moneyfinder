@@ -12,7 +12,7 @@ function onDeviceReady() {
 
 
 $(document).ready(function() {
-    //setUp();
+    setUp();
     
 });
 
