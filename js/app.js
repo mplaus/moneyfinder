@@ -3,16 +3,24 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 // PhoneGap is ready
 function onDeviceReady() {
+
     console.log("onDeviceReady()");
-    navigator.geolocation.getCurrentPosition(generateMap, onError);
-    console.log(position);
+    setUp();
+    
 }
+
+
+
+$(document).ready(function() {
+    //setUp();
+    
+});
 
 var htmlBuilder = "";
 
 
-$(document).ready(function() {
-    
+function setUp(){
+
     var parseAPPID = "W91Wk1zFsAuDszjC07tMNEaatOf4cM1DS5m2k03P";
     var parseJSID = "rReOROOQgAkOePRoPa8TJ9UavsqAi2za36LOGIfh";
     
@@ -48,8 +56,25 @@ $(document).ready(function() {
         });
         
     });
-    
-});
+    cameraSetup();
+}
+
+
+
+function setPhoto(){
+//code for photo stuff.
+
+}
+
+function onError(){
+    console.log("There was an error.")
+}
+function cameraSetup(){
+    navigtor.geolocation.getCurrentPosition(setPhoto, onError);
+    console.log(position);
+
+}
+
 
 function getGeorge(findGeorge){
     console.log("getGeorge" + findGeorge);
