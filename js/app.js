@@ -1,6 +1,6 @@
 /* global $,document,console,Parse */
 
-document.addEventListener("deviceready", onDeviceReady, false);
+//document.addEventListener("deviceready", onDeviceReady, false);
 // PhoneGap is ready
 function onDeviceReady() {
     console.log("onDeviceReady()");
@@ -11,7 +11,7 @@ function onDeviceReady() {
 var htmlBuilder = "";
 
 
-//$(document).ready(function() {
+$(document).ready(function() {
     
     var parseAPPID = "W91Wk1zFsAuDszjC07tMNEaatOf4cM1DS5m2k03P";
     var parseJSID = "rReOROOQgAkOePRoPa8TJ9UavsqAi2za36LOGIfh";
@@ -62,7 +62,8 @@ function getGeorge(findGeorge){
                 htmlBuilder += 
     "<tr>" +
       "<td>" + results[index].attributes.serialNumber + "</td>" +
-      "<td>" + "</td>" +
+      "<td>" +  
+"</td>" +
     "</tr>" 
 
             });
