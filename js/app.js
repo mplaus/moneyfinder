@@ -1,6 +1,6 @@
 /* global $,document,console,Parse */
 
-//document.addEventListener("deviceready", onDeviceReady, false);
+document.addEventListener("deviceready", onDeviceReady, false);
 // PhoneGap is ready
 function onDeviceReady() {
     console.log("onDeviceReady()");
