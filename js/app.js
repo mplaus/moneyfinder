@@ -99,7 +99,10 @@ function getGeorge(findGeorge){
                 htmlBuilder += 
                     "<tr>" +
                     "<td>" + results[index].attributes.serialNumber + "</td>" +
-                    "<td>" +  
+                    "<td>" +  var pic = results[i].get("picture");
+                    if(pic) {
+                        s += "<br/><img src='" + pic.url() + "'>";
+                    }
                     "</td>" +
                     "</tr>" 
 
