@@ -17,6 +17,9 @@ $(document).ready(function() {
 });
 
 var htmlBuilder = "";
+var lat;
+var long;
+var myLocation
 
 
 function setUp(){
@@ -41,39 +44,48 @@ function setUp(){
         var data = {};
         data.serialNumber = $("#serialNumber").val();
         
+        var findGeorge = Parse.Object.extend("photos")
 
-        var george = new findGeorge();
-        console.log(data)
-        george.save(data, {
-            success:function(data) {
-                console.log("Success");
-                //Alerts are lame - but quick and easy
-                alert("Thanks for filling the form!");
-            },
-            error:function(e) {
-                console.dir(e);
-            }
-        });
+        if(imagedata !="") {
+            var parseFile = new Parse.File("mypic.jpg", {base64:imagedata});
+            var point = new Parse.GeoPoint(lat, long);
+            console.log(parseFile)
+                parseFile.save().then(function() {
+                    var george = new findGeorge();
+                    george.set("picture",parseFile)
+                    console.log(data)
+                    george.save(data, {
+                        success:function(data) {
+                            console.log("Success");
+                            //Alerts are lame - but quick and easy
+                            alert("Thanks for filling the form!");
+                            },
+                                error:function(e) {
+                                console.dir(e);
+                            }
+                        });
         
-    });
-    cameraSetup();
-}
+                });
+        }
+    })
+};
 
 
 
-function setPhoto(){
+
+/*function setPhoto(){
 //code for photo stuff.
 
-}
+}*/
 
-function onError(){
+/*function onError(){
     console.log("There was an error.")
-}
-function cameraSetup(){
+}*/
+/*function cameraSetup(){
     navigtor.geolocation.getCurrentPosition(setPhoto, onError);
     console.log(position);
 
-}
+}*/
 
 
 function getGeorge(findGeorge){
@@ -85,17 +97,18 @@ function getGeorge(findGeorge){
             $.each(results, function(index,value) {
                 console.log(results[index].attributes.serialNumber);
                 htmlBuilder += 
-    "<tr>" +
-      "<td>" + results[index].attributes.serialNumber + "</td>" +
-      "<td>" +  
-"</td>" +
-    "</tr>" 
+                    "<tr>" +
+                    "<td>" + results[index].attributes.serialNumber + "</td>" +
+                    "<td>" +  
+                    "</td>" +
+                    "</tr>" 
 
             });
             $("#serialNumber").html(htmlBuilder);
-        },
-        error: function(error){
-}
-});
+            },
+                                error:function(e) {
+                                console.dir(e);
+                            }
+                        });
 }
 
