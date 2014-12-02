@@ -46,7 +46,7 @@ function setUp(){
         
         var findGeorge = Parse.Object.extend("photos")
 
-        if(imagedata !="") {
+       /* if(imagedata !="") {
             var parseFile = new Parse.File("mypic.jpg", {base64:imagedata});
             var point = new Parse.GeoPoint(lat, long);
             console.log(parseFile)
@@ -63,7 +63,7 @@ function setUp(){
                                 error:function(e) {
                                 console.dir(e);
                             }
-                        });
+                        });*/
         
                 });
         }
