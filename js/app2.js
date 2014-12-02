@@ -20,12 +20,12 @@
 }
     
 
-	/*function search() {
+	function search() {
 		console.log("search")
 
 	var index={};
-	index.serialNumberId=$("serialNumberId").val();
-	}
+	index.serialNumberId=$("#serialNumberId").val();
+	
 
 	var findGeorge = Parse.Object.extend("findGeorge");
 	console.log(findGeorge);
@@ -38,7 +38,7 @@
 
 				}
 			});
-	}*/
+	}
 
 
 function getGeorge(findGeorge){
@@ -64,6 +64,6 @@ function getGeorge(findGeorge){
                                 
                             }
                 });
-    
+
 }
 	

@@ -39,7 +39,7 @@ function setUp(){
         //gather the form data
 
         var data = {};
-        data.serialNumber = $("#serialNumber").val();
+        data.serialNumber = parseInt($("#serialNumber").val());
         
             
                     var george = new findGeorge();
