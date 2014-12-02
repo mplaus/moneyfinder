@@ -73,19 +73,19 @@ function setUp(){
 
 
 
-/*function setPhoto(){
+function setPhoto(){
 //code for photo stuff.
 
-}*/
+}
 
-/*function onError(){
+function onError(){
     console.log("There was an error.")
-}*/
-/*function cameraSetup(){
+}
+function cameraSetup(){
     navigtor.geolocation.getCurrentPosition(setPhoto, onError);
     console.log(position);
 
-}*/
+}
 
 
 function getGeorge(findGeorge){
@@ -99,10 +99,7 @@ function getGeorge(findGeorge){
                 htmlBuilder += 
                     "<tr>" +
                     "<td>" + results[index].attributes.serialNumber + "</td>" +
-                    "<td>" +  var pic = results[i].get("picture");
-                    if(pic) {
-                        s += "<br/><img src='" + pic.url() + "'>";
-                    }
+                    "<td>" +  
                     "</td>" +
                     "</tr>" 
 
