@@ -20,8 +20,9 @@
 }
     
 
-	function search() {
+	/*function search() {
 		console.log("search")
+
 	var index={};
 	index.serialNumberId=$("serialNumberId").val();
 	}
@@ -37,7 +38,7 @@
 
 				}
 			});
-	}
+	}*/
 
 
 function getGeorge(findGeorge){
@@ -56,11 +57,13 @@ function getGeorge(findGeorge){
                     "</tr>" 
 
             });
+            
             $("#serialNumber").html(htmlBuilder);
             },
-                                error:function(e) {
-                                console.dir(e);
+                                error:function(error) {
+                                
                             }
-                        });
+                });
+    
 }
 	
