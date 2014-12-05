@@ -46,7 +46,7 @@ function setUp(){
 
         var data = {};
         data.serialNumber = parseInt($("#serialNumber").val());
-        
+        data.Place = parseInt($(#Place).val());
             
                     var george = new findGeorge();
                     george.save(data, {

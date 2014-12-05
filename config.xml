@@ -4,7 +4,7 @@
 		id = "com.yourdomainname.com" 
 		versionCode="1" 
 		version = "1"> 
-		<name>Where's George</name> 
+		<name>Money Tracker</name> 
 		<description> 
 			Track dolars across the country 
 		</description> 
