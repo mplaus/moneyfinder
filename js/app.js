@@ -7,7 +7,13 @@ function onDeviceReady() {
     //console.log("onDeviceReady()");
     setUp();
     
-}
+};
+
+$(document).ready(function(){
+    setUp();
+});
+
+
 
 
     

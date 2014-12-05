@@ -32,9 +32,11 @@
 	var query = new Parse.Query(findGeorge);
 		query.get(index, {
 			sucess: function(findGeorge) {
+				alert("Sorry Number Not Found");
 
 			},
 				error: function(Object, error) {
+					alert("Sorry Number Not Found");
 
 				}
 			});
